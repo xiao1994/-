@@ -1,0 +1,12 @@
+<import src="../icon/icon-template.wxml" />
+<template name="iconListTemplate">
+
+  <view class="icon-list-container">
+    <view class="icon-container">
+      <template is="iconTemplate"/>
+    </view>
+    <view class="icon-container">
+      <template is="iconTemplate"/>
+    </view>
+  </view>
+</template>

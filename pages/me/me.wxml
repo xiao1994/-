@@ -1,0 +1,20 @@
+<import src="../template/input/input-template.wxml" />
+<view class="me-container">
+
+  <view class="input-list">
+    <template is="inputTemplate"></template>
+  </view>
+  <view class="input-list">
+    <template is="inputTemplate"></template>
+  </view>
+
+  <text class="prompt">用户不存在</text>
+
+  <view>
+    <text class="forgot-password">忘记密码？</text>
+  </view>
+
+  <button class="sign-in">登陆</button>
+  <button class="sign-in-phone">使用手机验证码登陆</button>
+  <text class="sign-up">新用户注册</text>
+</view>

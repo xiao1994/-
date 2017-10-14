@@ -1,0 +1,7 @@
+<template name="locationThroughout">
+  <view class="location-throughout-container">
+    <image class="location-throughout-img" src="/images/icon/start.png" />
+    <text class="location-throughout-text">北京望京</text>
+    <image class="location-throughout-arrow" src="/images/icon/arrow-down.png" />
+  </view>
+</template>

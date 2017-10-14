@@ -1,0 +1,7 @@
+<template name="inputTemplate">
+  <view class="input-container">
+    <image class="input-icon" src="/images/input/phone.png" />
+    <image class="input-line" src="/images/input/vertical-line.png" />
+    <input class="input-content" placeholder="手机号" type="number"></input>
+  </view>
+</template>

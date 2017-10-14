@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/summary/summary",
+    "pages/me/me"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#1E90FF",
+    "navigationBarTitleText": "百也快运"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/images/tab/home.png",
+        "selectedIconPath": "/images/tab/home_open.png",
+        "color": "#f2ff2f2",
+        "selectedColor": "#1E90FF"
+      },
+      {
+        "pagePath": "pages/summary/summary",
+        "text": "简介",
+        "iconPath": "/images/tab/summary.png",
+        "selectedIconPath": "/images/tab/summary_open.png",
+        "color": "#f2ff2f2",
+        "selectedColor": "#1E90FF"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "/images/tab/me.png",
+        "selectedIconPath": "/images/tab/me_open.png",
+        "color": "#f2ff2f2",
+        "selectedColor": "#1E90FF"
+      }
+    ]
+  }
+}

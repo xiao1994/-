@@ -1,0 +1,58 @@
+@import "../template/input/input-template.wxss";
+
+.me-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  height: 1334rpx;
+}
+
+.input-list {
+  margin-top: 30rpx;
+}
+
+.prompt {
+  text-align: center;
+  color: red;
+  margin-bottom: 30rpx;
+}
+
+.forgot-password {
+  float: right;
+  color: #000;
+  margin-bottom: 100rpx;
+}
+
+.sign-in {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 35rpx;
+  height: 70rpx;
+  width: 600rpx;
+  color: #fff;
+  border-radius: 50px;
+  background-color: #1e90ff;
+  margin-bottom: 40rpx;
+}
+
+.sign-in-phone {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 35rpx;
+  height: 80rpx;
+  width: 600rpx;
+  color: #32b16c;
+  border-radius: 50px;
+  background-color: #fff;
+  margin-bottom: 80rpx;
+  border: 1px solid #32b16c;
+}
+
+.sign-up {
+  text-align: center;
+  font-weight: 600;
+  font-size: 35rpx;
+  color: #1e90ff;
+}

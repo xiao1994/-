@@ -1,0 +1,54 @@
+<import src="../template/icon-list/icon-list-template.wxml" />
+<import src="../template/location-throughout/location-throughout-template.wxml" />
+<scroll-view class="home-container">
+  <view class="head-container">
+    <view class="location-container">
+      <image class="location-img" src="/images/icon/location.png" />
+      <text class="location-text">北京</text>
+    </view>
+    <view class="introduce-container">
+      <image class="introduce-img" src="/images/icon/triangle.png" />
+      <text class="introduce-text">全国性物流资讯发布平台</text>
+      <image class="introduce-img" src="/images/icon/triangle.png" />
+    </view>
+  </view>
+
+  <swiper indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="1000">
+    <block wx:for="{{swiper_img_key}}">
+      <swiper-item>
+        <image src="{{item}}" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="icons-container">
+    <template is="iconListTemplate"></template>
+    <template is="iconListTemplate"></template>
+    <template is="iconListTemplate"></template>
+    <template is="iconListTemplate"></template>
+    <template is="iconListTemplate"></template>
+  </view>
+
+  <view class="query">
+    <button class="query-btn">专线查询</button>
+    <view class="frequency">
+      <text>累计查询</text>
+      <text>2333</text>
+      <text>次</text>
+    </view>
+    <view class="route">
+      <template is="locationThroughout" />
+      <image class="route-img" src="/images/icon/logistics.png" />
+      <template is="locationThroughout" />
+    </view>
+  </view>
+
+  <view class="foot-container">
+    <text>欢迎在平台发布推广信息</text>
+    <view>
+    <text class="foot-right">发布热线：13332619598</text>
+    <text>客服微信：暂无</text>
+    </view>
+  </view>
+
+</scroll-view>

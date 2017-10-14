@@ -1,0 +1,24 @@
+.location-throughout-container {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20rpx;
+  border-bottom: 2rpx solid #707070;
+}
+
+.location-throughout-img {
+  height: 40rpx;
+  width: 40rpx;
+}
+
+.location-throughout-text {
+  text-align: center;
+  width: 170rpx;
+  font-size: 40rpx;
+  font-weight: 800;
+  color: #1e90ff;
+}
+
+.location-throughout-arrow {
+  height: 40rpx;
+  width: 40rpx;
+}
