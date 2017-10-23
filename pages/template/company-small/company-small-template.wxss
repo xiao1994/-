@@ -1,0 +1,49 @@
+.company-small-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.company-small-content {
+  display: flex;  
+  align-items: center;
+}
+
+.company-small-name {
+  font-size: 30rpx;
+  color: #000;
+}
+
+.small-route {
+  padding-left: 20rpx;
+  width: 260rpx;
+}
+
+.small-location-throughout-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.small-location-throughout-text {
+  font-size: 25rpx;
+  font-weight: 800;
+  color: #1e90ff;
+}
+
+.small-route-img {
+  height: 50rpx;
+  width: 50rpx;
+}
+
+.company-small-location {
+  font-size: 25rpx;
+}
+
+.small-telephone {
+  width: 60rpx;
+  height: 60rpx;
+}

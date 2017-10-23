@@ -3,9 +3,10 @@
   align-items: center;
   background-color: #fff;
   height: 100rpx;
+  margin-top: 30rpx;
 }
 
-.input-icon {
+.input-img {
   padding-left: 120rpx;
   height: 50rpx;
   width: 50rpx;
@@ -17,4 +18,14 @@
 }
 
 .input-content {
+  flex: 1;
+}
+
+.phone-code {
+  margin-right:160rpx;
+  color: #fff;
+  font-size: 20rpx;
+  width: 160rpx;
+  height: 50rpx;
+  background-color: red;
 }

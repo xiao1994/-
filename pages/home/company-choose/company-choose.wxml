@@ -1,0 +1,29 @@
+<import src="../../template/company-big/company-big-template.wxml" />
+<import src="../../template/company-small/company-small-template.wxml" />
+<scroll-view>
+  <view class="route">
+    <view class="easy-location-throughout-container">
+      <text class="easy-location-throughout-text">{{start}}</text>
+      <image class="easy-route-img" src="/images/icon/logistics.png" />
+      <text class="easy-location-throughout-text">{{end}}</text>
+    </view>
+  </view>
+
+  <view class="company-choose-head">
+    <view bindtap="companyChooseTap" class="company-choose-head-view">
+      <text class="company-choose-title">搬家搬厂</text>
+      <image class="company-choose-img" src="../../../images/icon/arrow-down.png" />
+    </view>
+
+    <image class="company-choose-line" src="../../../images/input/vertical-line.png" />
+
+    <view bindtap="companyChooseTap" class="company-choose-head-view">
+      <text class="company-choose-title">区域选择</text>
+      <image class="company-choose-img" src="../../../images/icon/arrow-down.png" />
+    </view>
+  </view>
+  <template is="companyBig" data="{{...location}}" />
+  <template is="companySmall" data="{{...location}}" />
+
+
+</scroll-view>

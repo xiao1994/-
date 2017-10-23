@@ -1,10 +1,6 @@
 @import "../template/icon-list/icon-list-template.wxss";
 @import "../template/location-throughout/location-throughout-template.wxss";
 
-.home-container {
-  background-color: #f2f2f2;
-}
-
 .head-container {
   background-color: #1e90ff;
   display: flex;

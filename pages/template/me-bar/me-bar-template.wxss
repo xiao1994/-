@@ -1,0 +1,23 @@
+.me-bar-container {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  height: 100rpx;
+  margin-top: 30rpx;
+}
+
+.me-bar-img {
+  margin: 0 20rpx;
+  height: 50rpx;
+  width: 50rpx;
+}
+
+.me-bar-text {
+  flex: 1;
+}
+
+.me-bar-arrow {
+  margin-right: 40rpx;
+  height: 20rpx;
+  width: 20rpx;
+}

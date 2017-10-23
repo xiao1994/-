@@ -1,7 +1,7 @@
 <template name="locationThroughout">
   <view class="location-throughout-container">
-    <image class="location-throughout-img" src="/images/icon/start.png" />
-    <text class="location-throughout-text">北京望京</text>
-    <image class="location-throughout-arrow" src="/images/icon/arrow-down.png" />
+    <image class="location-throughout-img" src="{{throughout}}" />
+    <text bindtap="locationTap" class="location-throughout-text">{{content}}</text>
+    <image class="location-throughout-arrow" src="{{arrow}}" />
   </view>
 </template>

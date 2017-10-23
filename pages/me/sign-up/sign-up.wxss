@@ -1,0 +1,54 @@
+@import "../../template/input/input-template.wxss";
+
+.sign-up-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  padding-top: 30px;
+  height: 1110rpx;
+}
+
+.input-list {
+  margin-top: 30rpx;
+}
+
+.sign-up-agreement-container {
+  margin: 60rpx 0;
+  display: flex;
+  align-items: center;
+}
+
+.sign-up-agreement-text {
+  margin-left: 30rpx;
+  flex: 1;
+  font-size: 40rpx;
+}
+
+.sign-up-arrow {
+  width: 20rpx;
+  height: 20rpx;
+  margin-right: 30rpx;
+}
+
+.sign-up-switch {
+  margin-right: 30rpx;
+}
+
+.sign-phone-prompt {
+  margin-bottom: 18rpx;
+  text-align: center;
+  color: red;
+}
+
+.sign-up-btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 45rpx;
+  height: 100rpx;
+  width: 400rpx;
+  color: #fff;
+  border-radius: 50px;
+  background-color: #1e90ff;
+  margin-bottom: 40rpx;
+}

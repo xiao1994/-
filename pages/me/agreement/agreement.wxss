@@ -1,0 +1,6 @@
+/* pages/me/agreement/agreement.wxss */
+.agreement-title {
+  font-size: 45rpx;
+  font-weight: 700;
+  color: #000;
+}

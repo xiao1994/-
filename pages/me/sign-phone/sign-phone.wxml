@@ -1,0 +1,11 @@
+<import src="../../template/input/input-template.wxml" />
+<view class="sign-phone-container">
+  <view class="input-list">
+    <block wx:for="{{sign_phone_key}}" wx:for-item="input">
+      <template is="inputTemplate" data="{{...input}}" />
+    </block>
+  </view>
+
+  <text class="sign-phone-prompt">验证码不正确</text>
+  <button bindtap="signPhoneTap" class="sign-phone-btn">确认</button>
+</view>

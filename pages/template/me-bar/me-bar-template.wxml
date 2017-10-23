@@ -1,0 +1,7 @@
+<template name="meBarTemplate">
+  <view class="me-bar-container">
+    <image class="me-bar-img" src="{{img}}" />
+    <text class="me-bar-text">{{text}}</text>
+    <image class="me-bar-arrow" src="/images/icon/arrow-right.png"/>
+  </view>
+</template>

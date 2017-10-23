@@ -1,12 +1,15 @@
-<import src="../icon/icon-template.wxml" />
 <template name="iconListTemplate">
-
   <view class="icon-list-container">
-    <view class="icon-container">
-      <template is="iconTemplate"/>
+    <view bindtap="chooseTap" class="icon-container">
+      <view class="icon-content">
+        <text class="icon-title">{{content1}}</text>
+      </view>
     </view>
-    <view class="icon-container">
-      <template is="iconTemplate"/>
+
+    <view bindtap="chooseTap" class="icon-container">
+      <view class="icon-content">
+        <text class="icon-title">{{content2}}</text>
+      </view>
     </view>
   </view>
 </template>

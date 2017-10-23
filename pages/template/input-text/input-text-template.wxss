@@ -1,0 +1,27 @@
+.input-text-container {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  height: 100rpx;
+  border-bottom: 1px solid #c0c0c0;
+}
+
+.input-view {
+  flex: 3;
+}
+
+.input-text {
+  float: right;
+  font-size: 45rpx;
+  color: #1e90ff;
+}
+
+.input-line {
+  flex: 0.5;
+  height: 60rpx;
+  width: 40rpx;
+}
+
+.input-content {
+  flex: 6;
+}

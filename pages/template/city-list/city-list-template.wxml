@@ -1,0 +1,16 @@
+<template name="cityListTemplate">
+  <view class="city-list-container">
+    <view class="city-container">
+        <button class="city-btn">{{city1}}</button>
+    </view>
+    <view class="city-container">
+        <button class="city-btn">{{city2}}</button>
+    </view>
+    <view class="city-container">
+        <button class="city-btn">{{city3}}</button>
+    </view>
+    <view class="city-container">
+        <button class="city-btn">{{city4}}</button>
+    </view>
+  </view>
+</template>

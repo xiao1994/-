@@ -1,0 +1,34 @@
+@import "../../template/city-list/city-list-template.wxss";
+@import "../../template/company-big/company-big-template.wxss";
+@import "../../template/company-small/company-small-template.wxss";
+.city-choose-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.city-choose-title{
+  color: #1E90FF;
+  font-size: 45rpx;
+  background-color: #f2f2f2;
+}
+
+.citys-frame{
+  display: flex;
+  flex-direction: column;
+  margin: 10rpx;
+  height: 1080rpx;
+}
+
+.city-container {
+  flex: 1;
+}
+
+.city-foot {
+  display: flex;
+}
+
+.city-foot-btn {
+  flex: 1;
+  margin: 10rpx;
+}

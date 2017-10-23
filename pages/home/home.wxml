@@ -1,8 +1,8 @@
 <import src="../template/icon-list/icon-list-template.wxml" />
 <import src="../template/location-throughout/location-throughout-template.wxml" />
-<scroll-view class="home-container">
+<scroll-view>
   <view class="head-container">
-    <view class="location-container">
+    <view bindtap="locationTap" class="location-container">
       <image class="location-img" src="/images/icon/location.png" />
       <text class="location-text">北京</text>
     </view>
@@ -16,17 +16,15 @@
   <swiper indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="1000">
     <block wx:for="{{swiper_img_key}}">
       <swiper-item>
-        <image src="{{item}}" />
+        <image src="{{item}}"/>
       </swiper-item>
     </block>
   </swiper>
 
   <view class="icons-container">
-    <template is="iconListTemplate"></template>
-    <template is="iconListTemplate"></template>
-    <template is="iconListTemplate"></template>
-    <template is="iconListTemplate"></template>
-    <template is="iconListTemplate"></template>
+    <block wx:for="{{icons_container_key}}" wx:for-item="icons">
+      <template is="iconListTemplate" data="{{...icons}}" />
+    </block>
   </view>
 
   <view class="query">
@@ -37,17 +35,17 @@
       <text>次</text>
     </view>
     <view class="route">
-      <template is="locationThroughout" />
+      <template is="locationThroughout" data="{{...location_start}}" />
       <image class="route-img" src="/images/icon/logistics.png" />
-      <template is="locationThroughout" />
+      <template is="locationThroughout" data="{{...location_end}}" />
     </view>
   </view>
 
   <view class="foot-container">
     <text>欢迎在平台发布推广信息</text>
     <view>
-    <text class="foot-right">发布热线：13332619598</text>
-    <text>客服微信：暂无</text>
+      <text class="foot-right">发布热线：13332619598</text>
+      <text>客服微信：暂无</text>
     </view>
   </view>
 

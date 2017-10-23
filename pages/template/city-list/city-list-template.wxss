@@ -1,0 +1,13 @@
+.city-list-container {
+  display: flex;
+}
+
+.city-container {
+  flex: 1;
+  margin: 10rpx;
+}
+
+.city-btn {
+  font-size: 30rpx;
+  margin: 0 auto;
+}

@@ -1,4 +1,3 @@
-@import "../icon/icon-template.wxss";
 .icon-list-container {
   display: flex;
   flex-direction: row;
@@ -7,4 +6,15 @@
 .icon-container {
   flex: 1;
   margin: 5rpx;
+}
+
+.icon-content {
+  display: flex;
+  align-items: center;
+  height: 80rpx;
+  background-color: #fff;
+}
+
+.icon-title {
+  margin: 0 auto;
 }

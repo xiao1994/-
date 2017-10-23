@@ -1,0 +1,27 @@
+.id-img-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  text-align: center;
+}
+
+.id-img-view {
+  display: flex;
+  flex-direction: column;
+  margin: 40rpx;
+  border: 2px dashed #c0c0c0;
+  border-radius: 40rpx;
+  border-color: #1e90ff;
+}
+
+.id-img {
+  margin: 45rpx auto;
+  height: 300rpx;
+  width: 450rpx;
+}
+
+.id-title {
+  font-size: 50rpx;
+  color: #000;
+  margin-bottom: 40rpx;
+}

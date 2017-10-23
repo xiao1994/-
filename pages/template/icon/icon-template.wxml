@@ -1,5 +1,0 @@
-<template name="iconTemplate">
-    <view class="icon-containe">
-      <text class="icon-title">专线物流</text>
-    </view>
-</template>

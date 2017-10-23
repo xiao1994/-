@@ -1,0 +1,43 @@
+@import "../../template/input-text/input-text-template.wxss";
+@import "../../template/id-img/id-img-template.wxss";
+.id-content-container {
+  margin: 20rpx 0;
+  background-color: #fff;
+}
+
+.avatar-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 140rpx;
+  border-top: 1px solid #c0c0c0;
+  border-bottom: 1px solid #c0c0c0;
+}
+
+.avatar-text {
+  font-size: 45rpx;
+  color: #1e90ff;
+}
+
+.avatar-img {
+  height: 100rpx;
+  width: 100rpx;
+}
+
+.id-finish-container {
+  margin: 100rpx auto;
+  text-align: center;
+}
+
+.id-prompt {
+  color: red;
+}
+
+.id-btn {
+  margin-top: 50rpx;
+  font-size: 45rpx;
+  border-radius: 60rpx;
+  width: 400rpx;
+  color: #fff;
+  background-color: #1e90ff;
+}

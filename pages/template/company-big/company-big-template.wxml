@@ -1,0 +1,38 @@
+<template name="companyBig">
+
+  <view class="company-big-container">
+
+    <view class="company-big-content-container">
+      <image class="company-logo" src="../../../images/home/company-logo.jpg" />
+
+      <view class="company-big-content">
+
+        <view class="company-big-content-top">
+          <view>
+            <text class="company-big-name">豪臣物流</text>
+            <view class="big-route">
+              <view class="big-location-throughout-container">
+                <text class="big-location-throughout-text">{{start}}</text>
+                <image class="big-route-img" src="/images/icon/logistics.png" />
+                <text class="big-location-throughout-text">{{end}}</text>
+              </view>
+            </view>
+          </view>
+          <image bindtap="telephoneTap" class="big-telephone" src="../../../images/home/telephone.png" />
+        </view>
+
+        <view class="company-big-content-bottom">
+          <view>
+            <image class="company-big-location-img" src="../../../images/icon/company-location.png" />
+            <text class="company-big-location">宝安区新安</text>
+            <text class="company-big-distance">距此999+km</text>
+          </view>
+          <text class="browse">5023人看过</text>
+        </view>
+
+      </view>
+
+    </view>
+
+  </view>
+</template>

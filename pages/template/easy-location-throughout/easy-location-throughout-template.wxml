@@ -1,0 +1,7 @@
+<template name="easyLocationThroughout">
+  <view class="easy-location-throughout-container">
+    <text class="easy-location-throughout-text">{{start}}</text>
+    <image class="easy-route-img" src="/images/icon/logistics.png" />
+    <text class="easy-location-throughout-text">{{end}}</text>
+  </view>
+</template>

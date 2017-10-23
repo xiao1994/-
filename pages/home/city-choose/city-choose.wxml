@@ -1,0 +1,17 @@
+<import src="../../template/city-list/city-list-template.wxml" />
+<scroll-view class="city-choose-container">
+  <button class="city-choose-title">选择城市</button>
+
+  <view class="citys-frame">
+    <view class="city-container">
+      <block wx:for="{{city_container_key}}" wx:for-item="city">
+        <template is="cityListTemplate" data="{{...city}}" />
+      </block>
+    </view>
+
+    <view class="city-foot">
+      <button bindtap="cancelTab" class="city-foot-btn">取消</button>
+      <button bindtap="returnTab" wx:if="{{true}}" class="city-foot-btn">返回上一级</button>
+    </view>
+  </view>
+</scroll-view>

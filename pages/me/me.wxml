@@ -1,20 +1,32 @@
 <import src="../template/input/input-template.wxml" />
-<view class="me-container">
-
-  <view class="input-list">
-    <template is="inputTemplate"></template>
-  </view>
-  <view class="input-list">
-    <template is="inputTemplate"></template>
+<import src="../template/me-bar/me-bar-template.wxml" />
+<view wx:if="{{true}}" class="sign-in-container">
+  <view>
+    <block wx:for="{{sign_in_key}}" wx:for-item="input">
+      <template is="inputTemplate" data="{{...input}}" />
+    </block>
   </view>
 
   <text class="prompt">用户不存在</text>
 
   <view>
-    <text class="forgot-password">忘记密码？</text>
+    <text bindtap="signPhoneTap" class="forgot-password">忘记密码？</text>
   </view>
 
-  <button class="sign-in">登陆</button>
-  <button class="sign-in-phone">使用手机验证码登陆</button>
-  <text class="sign-up">新用户注册</text>
+  <button bindtap="signInTap" class="sign-in-btn">登陆</button>
+  <button bindtap="signPhoneTap" class="sign-phone-btn">使用手机验证码登陆</button>
+  <text bindtap="signUpTap" class="sign-up-text">新用户注册</text>
 </view>
+
+<scroll-view wx:if="{{flase}}">
+  <view class="me-head-container">
+    <image class="avatar" src="/images/input/id-hand.jpg"/>
+    <text class="user-name">李青</text>
+  </view>
+
+  <view>
+    <block wx:for="{{me_key}}" wx:for-item="me_bar">
+      <template is="meBarTemplate" data="{{...me_bar}}" />
+    </block>
+  </view>
+</scroll-view>

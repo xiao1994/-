@@ -1,0 +1,26 @@
+<import src="../../template/input-text/input-text-template.wxml" />
+<import src="../../template/id-img/id-img-template.wxml" />
+<scroll-view>
+
+  <view class="id-content-container">
+    <view class="avatar-container">
+      <text class="avatar-text">头像</text>
+      <image class="avatar-img" src="/images/input/user.png" />
+    </view>
+
+    <block wx:for="{{id_content_key}}" wx:for-item="input">
+      <template is="inputTextTemplate" data="{{...input}}" />
+    </block>
+  </view>
+
+  <view>
+    <block wx:for="{{id_img_key}}" wx:for-item="input">
+      <template is="idImgTemplate" data="{{...input}}" />
+    </block>
+  </view>
+
+  <view class="id-finish-container">
+    <text class="id-prompt">请完善资料</text>
+    <button bindtap="idFinishTab" class="id-btn">注册完成</button>
+  </view>
+</scroll-view>

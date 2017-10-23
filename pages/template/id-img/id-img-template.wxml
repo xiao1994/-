@@ -1,0 +1,8 @@
+<template name="idImgTemplate">
+  <view class="id-img-container">
+    <view class="id-img-view">
+      <image class="id-img" src="{{img}}" />
+      <text class="id-title">{{title}}</text>
+    </view>
+  </view>
+</template>

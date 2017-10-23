@@ -1,0 +1,18 @@
+<import src="../../template/input/input-template.wxml" />
+<view class="sign-up-container">
+
+  <view>
+    <block wx:for="{{sign_up_key}}" wx:for-item="input">
+      <template is="inputTemplate" data="{{...input}}" />
+    </block>
+  </view>
+
+  <view class="sign-up-agreement-container">
+    <text bindtap="agreementTap" class="sign-up-agreement-text">使用协议</text>
+    <image class="sign-up-arrow" src="../../../images/icon/arrow-right.png" />
+    <switch class="sign-up-switch" />
+  </view>
+
+  <text class="sign-phone-prompt">验证码不正确</text>
+  <button bindtap="IDTap" class="sign-up-btn">下一步</button>
+</view>

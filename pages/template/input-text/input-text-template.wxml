@@ -1,0 +1,9 @@
+<template name="inputTextTemplate">
+  <view class="input-text-container">
+    <view class="input-view">
+      <text class="input-text">{{title}}</text>
+    </view>
+    <image class="input-line" src="/images/input/vertical-line.png" />
+    <input class="input-content" placeholder="{{content}}"></input>
+  </view>
+</template>

@@ -1,0 +1,84 @@
+.company-big-container {
+  background-color: #fff;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.company-big-content-container {
+  display: flex;
+}
+
+.company-big-content-top {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20rpx;
+}
+
+.company-logo {
+  width: 200rpx;
+  height: 150rpx;
+}
+
+.company-big-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.company-big-name {
+  font-size: 30rpx;
+  font-weight: 600;
+  color: #000;
+}
+
+.big-route {
+  width: 260rpx;
+  margin: 10rpx 0;
+}
+
+.big-location-throughout-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.big-location-throughout-text {
+  font-size: 25rpx;
+  font-weight: 800;
+  color: #1e90ff;
+}
+
+.big-route-img {
+  height: 50rpx;
+  width: 50rpx;
+}
+
+.big-telephone {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.company-big-content-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.company-big-location-img {
+  padding: 0 10rpx;
+  height: 25rpx;
+  width: 25rpx;
+}
+
+.company-big-location {
+  font-size: 25rpx;
+}
+
+.company-big-distance{
+  padding-left: 20rpx;
+  font-size: 25rpx;
+}
+
+.browse {
+  font-size: 25rpx;
+}

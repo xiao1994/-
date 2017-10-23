@@ -1,12 +1,18 @@
 {
   "pages": [
+    "pages/home/company-choose/company-choose",
     "pages/home/home",
     "pages/summary/summary",
-    "pages/me/me"
+    "pages/me/me",
+    "pages/me/agreement/agreement",
+    "pages/me/sign-up/sign-up",
+    "pages/me/id/id",
+    "pages/me/sign-phone/sign-phone",
+    "pages/me/password/password"
   ],
   "window": {
     "navigationBarBackgroundColor": "#1E90FF",
-    "navigationBarTitleText": "百也快运"
+    "navigationBarTitleText": "物流在线"
   },
   "tabBar": {
     "borderStyle": "white",

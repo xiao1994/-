@@ -1,2 +1,6 @@
- <input placeholder="这是一个可以自动聚焦的input" auto-focus/>
-
+<view>提示：{{tip}}</view>
+<button type="default" bindtap="showModal">点击我弹出modal对话框</button>
+<view>
+  <modal title="modal对话框" hidden="{{modalHidden}}" confirm-text="确定" cancel-text="取消"
+  bindconfirm="modalBindaconfirm" bindcancel="modalBindcancel">您好，我是modal对话框</modal>
+</view>
