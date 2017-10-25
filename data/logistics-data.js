@@ -44,27 +44,27 @@ var sign_in = [
 var sign_up = [
   {
     img: "/images/input/phone.png",
-    line: "/images/input/vertical-line.png",
+    line: "/images/icon/vertical-line.png",
     content: "手机号"
   },
   {
     img: "/images/input/user.png",
-    line: "/images/input/vertical-line.png",
+    line: "/images/icon/vertical-line.png",
     content: "用户名"
   },
   {
     img: "/images/input/lock.png",
-    line: "/images/input/vertical-line.png",
+    line: "/images/icon/vertical-line.png",
     content: "设置密码"
   },
   {
     img: "/images/input/lock.png",
-    line: "/images/input/vertical-line.png",
+    line: "/images/icon/vertical-line.png",
     content: "再次确认密码"
   },
   {
     img: "/images/input/code.png",
-    line: "/images/input/vertical-line.png",
+    line: "/images/icon/vertical-line.png",
     content: "手机验证码",
     phoneCode: "true"
   },

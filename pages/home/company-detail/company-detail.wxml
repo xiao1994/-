@@ -1,0 +1,48 @@
+<scroll-view>
+  <swiper indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="1000">
+    <block wx:for="{{swiper_img}}">
+      <swiper-item>
+        <image src="{{item}}" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="company-detail-small-bar">
+    <view class="company_detail_tags">
+      <view wx:for="{{company_detail_tags}}">
+        <image class="company-detail-tag" src="{{item[0]}}" />
+      </view>
+    </view>
+
+    <view class="company-detail-small-bar-right">
+      <text class="browse">{{browse}}</text>
+      <image class="laud" src="../../../images/icon/laud.png" />
+      <text class="laud-man">3人</text>
+    </view>
+  </view>
+
+  <view class="company-detail-big-bar">
+    <text class="company-detail-big-bar-text">主营：</text>
+    <text class="company-detail-big-bar-text">专业提供医疗，餐饮，食品冷藏配送</text>
+  </view>
+
+  <view class="company-detail-choose">
+    <text class="company-detail-choose-text">公司简介</text>
+    <image class="company-detail-choose-img" src="../../../images/icon/vertical-line.png" />
+    <text class="company-detail-choose-text">服务站点</text>
+    <image class="company-detail-choose-img" src="../../../images/icon/vertical-line.png" />
+    <text class="company-detail-choose-text">企业相册</text>
+    <image class="company-detail-choose-img" src="../../../images/icon/vertical-line.png" />
+    <text class="company-detail-choose-text">用户评价</text>
+  </view>
+
+  <view class="company-detail-choose-summary">
+    <view>
+      <view class="company-detail-choose-summary-text">上海中超物流有限公司成立于1998年，注册资金1000万元，公司具有资源化配置，提供灵活多样的客户服务，为客户创造更多的价值，发挥信息技术优势，打造成为新世纪顶尖的现代化第三方物流，对企业物流外包相对于自营物流具有明显的比较优势。我公司集仓储、配载、短驳、长途运输、分拨等业务为一体的专业物流运输公司。
+  目前公司主要经营地处于上海市闵行区陪昆路208号，是上海货物运输的龙头企业。本公司采用当今国内最先进的物流管理模式，并配有先进的电脑管理系统，为客户设计最佳的物流运作方式，我公司所有员工均经过专业培训并从事货物运输多年，具有良好的营运意识及物流经验，立志于取信客户，真实做事，诚实待人，互惠互利，树立新一代物流公司形象。          </view>
+      <image />
+    </view>
+    <image src=""/>
+  </view>
+
+</scroll-view>

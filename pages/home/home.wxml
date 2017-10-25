@@ -41,10 +41,10 @@
     </view>
   </view>
 
-  <view class="foot-container">
+  <view class="footer-container">
     <text>欢迎在平台发布推广信息</text>
     <view>
-      <text class="foot-right">发布热线：13332619598</text>
+      <text class="footer-right">发布热线：13332619598</text>
       <text>客服微信：暂无</text>
     </view>
   </view>

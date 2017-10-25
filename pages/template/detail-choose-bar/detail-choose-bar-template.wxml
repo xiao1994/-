@@ -1,0 +1,6 @@
+<template name="detailChooseBarTemplate">
+  <view bindtap="detailChooseTap" class="detail-choose-bar-container">
+    <text class="detail-choose-bar-text">{{text}}</text>
+    <image class="detail-choose-bar-img" src="{{img}}" />
+  </view>
+</template>

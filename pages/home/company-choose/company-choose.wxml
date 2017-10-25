@@ -22,8 +22,7 @@
       <image class="company-choose-img" src="../../../images/icon/arrow-down.png" />
     </view>
   </view>
-  <template is="companyBig" data="{{...location}}" />
-  <template is="companySmall" data="{{...location}}" />
-
-
+  <template is="companyBig" data="{{...company_content}}" />
+  <template is="companySmall" data="{{...company_content}}" />
+  
 </scroll-view>

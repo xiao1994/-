@@ -9,9 +9,10 @@
       </block>
     </view>
 
-    <view class="city-foot">
-      <button bindtap="cancelTab" class="city-foot-btn">取消</button>
-      <button bindtap="returnTab" wx:if="{{true}}" class="city-foot-btn">返回上一级</button>
+    <view class="city-footer">
+      <button bindtap="cancelTab" class="city-footer-btn">取消</button>
+      <button bindtap="returnTab" wx:if="{{true}}" class="city-footer-btn">返回上一级</button>
     </view>
+
   </view>
 </scroll-view>

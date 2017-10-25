@@ -4,18 +4,29 @@
   margin-bottom: 20rpx;
 }
 
+.company-big-right-container {
+  float: right;
+  display: flex;
+  flex-direction: column;
+}
+
+.big-telephone {
+  margin-left: 40rpx;
+  width: 80rpx;
+  height: 80rpx;
+  margin-bottom: 60rpx;
+}
+
+.browse {
+  font-size: 25rpx;
+}
+
 .company-big-content-container {
   display: flex;
 }
 
-.company-big-content-top {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 20rpx;
-}
-
 .company-logo {
-  width: 200rpx;
+  width: 260rpx;
   height: 150rpx;
 }
 
@@ -25,14 +36,33 @@
   width: 100%;
 }
 
+.company-big-content-top {
+  padding-left: 20rpx;
+}
+
+.company-big-title {
+  display: flex;
+  align-items: center;
+}
+
 .company-big-name {
   font-size: 30rpx;
   font-weight: 600;
   color: #000;
 }
 
+.company-big-tag {
+  padding-left: 10rpx;
+  height: 30rpx;
+  width: 30rpx;
+}
+
+.big-route-content{
+  display: flex;
+  align-items: center;
+}
+
 .big-route {
-  width: 260rpx;
   margin: 10rpx 0;
 }
 
@@ -53,15 +83,26 @@
   width: 50rpx;
 }
 
-.big-telephone {
-  width: 60rpx;
-  height: 60rpx;
+.big-route-tags {
+  display: flex;
+  align-items: center;
 }
 
-.company-big-content-bottom {
+.big-route-tag {
+  padding: 0 5rpx;
+  margin-left: 10rpx;
+  font-size: 20rpx;
+  color: #1e90ff;
+  border: 1px solid #1e90ff;
+}
+
+.big-tags {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+}
+
+.big-tag {
+  padding-right:10rpx;
 }
 
 .company-big-location-img {
@@ -79,6 +120,3 @@
   font-size: 25rpx;
 }
 
-.browse {
-  font-size: 25rpx;
-}

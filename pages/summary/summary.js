@@ -1,28 +1,21 @@
+var initData = 'this is first line\nthis is second line'
+var extraLine = [];
 Page({
   data: {
-    // text:"这是一个页面"
-    tip: '',
-    buttonDisabled: false,
-    modalHidden: true,
-    show: false
+    text: initData
   },
-  showModal: function () {
+  add: function (e) {
+    extraLine.push('other line')
     this.setData({
-      modalHidden: !this.data.modalHidden
+      text: initData + '\n' + extraLine.join('\n')
     })
   },
-  modalBindaconfirm: function () {
-    this.setData({
-      modalHidden: !this.data.modalHidden,
-      show: !this.data.show,
-      tip: '您点击了【确认】按钮！',
-      buttonDisabled: !this.data.buttonDisabled
-    })
-  },
-  modalBindcancel: function () {
-    this.setData({
-      modalHidden: !this.data.modalHidden,
-      tip: '您点击了【取消】按钮！'
-    })
+  remove: function (e) {
+    if (extraLine.length > 0) {
+      extraLine.pop()
+      this.setData({
+        text: initData + '\n' + extraLine.join('\n')
+      })
+    }
   }
 })

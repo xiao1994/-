@@ -1,0 +1,45 @@
+@import "../../template/detail-choose-bar/detail-choose-bar-template.wxss";
+
+.detail-choose-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-choose-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100rpx;
+  background-color: #f2f2f2;
+}
+
+.detail-choose-title {
+  font-size: 50rpx;
+  color: #1e90ff;
+}
+
+.detail-choose-content {
+  height: 1000rpx;
+  margin: 120rpx 0 100rpx;
+  background-color: #fff;
+}
+
+.detail-choose-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 120rpx;
+  background-color: #fff;
+}
+
+.detail-choose-btn {
+  width: 660rpx;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  font-size: 30rpx;
+}

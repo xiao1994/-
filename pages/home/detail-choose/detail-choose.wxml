@@ -1,0 +1,21 @@
+<import src="../../template/detail-choose-bar/detail-choose-bar-template.wxml" />
+<view class="detail-choose-container">
+
+
+
+  <scroll-view class="detail-choose-content">
+    <block wx:for="{{detail_choose_bar}}" wx:for-item="bars">
+      <template is="detailChooseBarTemplate" data="{{...bars}}" />
+    </block>
+  </scroll-view>
+
+  <view class="detail-choose-top">
+    <text class="detail-choose-title">服务选择</text>
+  </view>
+
+
+  <view class="detail-choose-footer">
+    <button bindtap="cancelTab" class="detail-choose-btn">取消</button>
+  </view>
+
+</view>

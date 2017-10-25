@@ -1,6 +1,6 @@
 {
   "pages": [
-    "pages/home/company-choose/company-choose",
+    "pages/home/company-detail/company-detail",
     "pages/home/home",
     "pages/summary/summary",
     "pages/me/me",
@@ -8,7 +8,10 @@
     "pages/me/sign-up/sign-up",
     "pages/me/id/id",
     "pages/me/sign-phone/sign-phone",
-    "pages/me/password/password"
+    "pages/me/password/password",
+    "pages/home/city-choose/city-choose",
+    "pages/home/company-choose/company-choose",
+    "pages/home/detail-choose/detail-choose"
   ],
   "window": {
     "navigationBarBackgroundColor": "#1E90FF",

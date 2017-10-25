@@ -24,11 +24,11 @@
   flex: 1;
 }
 
-.city-foot {
+.city-footer {
   display: flex;
 }
 
-.city-foot-btn {
+.city-footer-btn {
   flex: 1;
   margin: 10rpx;
 }

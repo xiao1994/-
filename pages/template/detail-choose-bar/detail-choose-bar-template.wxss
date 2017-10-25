@@ -1,0 +1,14 @@
+.detail-choose-bar-container {
+  display: flex;
+  padding: 30rpx;
+  border-bottom: 1px solid #000;
+}
+
+.detail-choose-bar-text {
+  flex: 1;
+}
+
+.detail-choose-bar-img {
+  height: 20rpx;
+  width: 20rpx;
+}
