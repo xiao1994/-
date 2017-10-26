@@ -1,4 +1,4 @@
-<scroll-view>
+<scroll-view class="company-detail-container">
   <swiper indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="1000">
     <block wx:for="{{swiper_img}}">
       <swiper-item>
@@ -17,7 +17,7 @@
     <view class="company-detail-small-bar-right">
       <text class="browse">{{browse}}</text>
       <image class="laud" src="../../../images/icon/laud.png" />
-      <text class="laud-man">3人</text>
+      <text class="laud-man">3024人</text>
     </view>
   </view>
 
@@ -28,21 +28,79 @@
 
   <view class="company-detail-choose">
     <text class="company-detail-choose-text">公司简介</text>
-    <image class="company-detail-choose-img" src="../../../images/icon/vertical-line.png" />
+    <image class="vertical-line" src="../../../images/icon/vertical-line.png" />
     <text class="company-detail-choose-text">服务站点</text>
-    <image class="company-detail-choose-img" src="../../../images/icon/vertical-line.png" />
+    <image class="vertical-line" src="../../../images/icon/vertical-line.png" />
     <text class="company-detail-choose-text">企业相册</text>
-    <image class="company-detail-choose-img" src="../../../images/icon/vertical-line.png" />
+    <image class="vertical-line" src="../../../images/icon/vertical-line.png" />
     <text class="company-detail-choose-text">用户评价</text>
   </view>
 
-  <view class="company-detail-choose-summary">
+  <view wx:if="{{}}" class="company-detail-choose-summary">
     <view>
-      <view class="company-detail-choose-summary-text">上海中超物流有限公司成立于1998年，注册资金1000万元，公司具有资源化配置，提供灵活多样的客户服务，为客户创造更多的价值，发挥信息技术优势，打造成为新世纪顶尖的现代化第三方物流，对企业物流外包相对于自营物流具有明显的比较优势。我公司集仓储、配载、短驳、长途运输、分拨等业务为一体的专业物流运输公司。
-  目前公司主要经营地处于上海市闵行区陪昆路208号，是上海货物运输的龙头企业。本公司采用当今国内最先进的物流管理模式，并配有先进的电脑管理系统，为客户设计最佳的物流运作方式，我公司所有员工均经过专业培训并从事货物运输多年，具有良好的营运意识及物流经验，立志于取信客户，真实做事，诚实待人，互惠互利，树立新一代物流公司形象。          </view>
-      <image />
+      <view class="company-detail-choose-summary-text">{{company_detail_choose_summary_text}}
+      </view>
     </view>
-    <image src=""/>
+    <image class="company-detail-choose-summary-img" src="../../../images/home/company-logo.jpg" />
+  </view>
+
+  <block wx:if="{{}}" wx:for="{{sites}}">
+    <view class="site-container">
+      <view class="site-top">
+        <text class="site-name">{{item.name}}</text>
+        <image class="laud" src="../../../images/icon/laud.png" />
+        <text class="site-laud-man">{{item.laudMan}}</text>
+      </view>
+
+      <text class="site-location">{{item.location}}</text>
+
+      <view class="site-choose-container">
+        <view class="site-choose">
+          <image class="site-choose-img" src="../../../images/icon/navigation.png" />
+          <text class="site-choose-text">导航</text>
+        </view>
+        <image class="vertical-line" src="../../../images/icon/vertical-line.png" />
+        <view class="site-choose">
+          <image class="site-choose-img" src="../../../images/icon/telephone.png" />
+          <text class="site-choose-text">售后电话</text>
+        </view>
+        <image class="vertical-line" src="../../../images/icon/vertical-line.png" />
+        <view class="site-choose">
+          <image class="site-choose-img" src="../../../images/input/phone.png" />
+          <text class="site-choose-text">业务电话</text>
+        </view>
+      </view>
+    </view>
+  </block>
+
+  <block wx:if="{{}}" wx:for="{{album}}" >
+    <view class="album">
+      <image class="album-image" src="{{item.img}}"/>
+    </view>
+  </block>
+
+  <view class="stars-container">
+    <view class="stars">
+      <image src="/images/icon/star.png"></image>
+      <image src="/images/icon/star.png"></image>
+      <image src="/images/icon/star.png"></image>
+      <image src="/images/icon/star.png"></image>
+      <image src="/images/icon/star.png"></image>
+    </view>
+    <text class="star-score">5.0</text>
   </view>
 
 </scroll-view>
+
+<view class="company-detail-footer">
+  <view class="company-detail-input-container">
+    <block wx:for="{{company_detail_footer}}">
+      <view class="input-container">
+        <image class="input-img" src="{{item.img}}" />
+        <image class="input-line" src="{{item.line}}" />
+        <input class="input-content" placeholder="{{item.content}}"></input>
+      </view>
+    </block>
+  </view>
+  <view class="company-detail-footer-choose"></view>
+</view>

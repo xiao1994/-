@@ -31,12 +31,12 @@ var icons_container = [
 var sign_in = [
   {
     img: "/images/input/phone.png",
-    line: "/images/input/vertical-line.png",
+    line: "/images/icon/vertical-line.png",
     content: "手机号"
   },
   {
     img: "/images/input/lock.png",
-    line: "/images/input/vertical-line.png",
+    line: "/images/icon/vertical-line.png",
     content: "登陆密码"
   }
 ]

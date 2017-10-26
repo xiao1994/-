@@ -14,7 +14,7 @@
       </view>
       <text class="company-small-location">广东深圳宝安区机场国内物流园一期二楼201号</text>
     </view>
-    <image bindtap="telephoneTap" class="small-telephone" src="../../../images/home/telephone.png" />
+    <image bindtap="telephoneTap" class="small-telephone" src="../../../images/icon/telephone.png" />
   </view>
 
 </template>

@@ -3,7 +3,7 @@
   <view class="company-big-container">
 
     <view class="company-big-right-container">
-      <image bindtap="telephoneTap" class="big-telephone" src="../../../images/home/telephone.png" />
+      <image bindtap="telephoneTap" class="big-telephone" src="../../../images/icon/telephone.png" />
       <text class="browse">{{browse}}</text>
     </view>
 

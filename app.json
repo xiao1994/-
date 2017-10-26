@@ -1,6 +1,6 @@
 {
   "pages": [
-    "pages/home/company-detail/company-detail",
+        "pages/home/company-detail/company-detail",
     "pages/home/home",
     "pages/summary/summary",
     "pages/me/me",
@@ -12,6 +12,7 @@
     "pages/home/city-choose/city-choose",
     "pages/home/company-choose/company-choose",
     "pages/home/detail-choose/detail-choose"
+
   ],
   "window": {
     "navigationBarBackgroundColor": "#1E90FF",

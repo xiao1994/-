@@ -6,31 +6,61 @@ Page({
    */
   data: {
     detail_choose_bar: [
-    {
-      text: "全部",
-      img: "/images/icon/arrow-right.png",
-    },{
-      text: "国际物流",
-      img: "/images/icon/arrow-right.png",
-    },{
-      text: "国际快递",
-      img: "/images/icon/arrow-right.png",
-    }, {
-      text: "全部",
-      img: "/images/icon/arrow-right.png",
-    }, {
-      text: "国际物流",
-      img: "/images/icon/arrow-right.png",
-    }, {
-      text: "国际快递",
-      img: "/images/icon/arrow-right.png",
-    }, {
-      text: "全部",
-      img: "/images/icon/arrow-right.png",
-    }, {
-      text: "国际物流",
-      img: "/images/icon/arrow-right.png",
-    }, 
+      {
+        text: "全部",
+        img: "/images/icon/arrow-right.png",
+      }, {
+        text: "国际物流",
+        img: "/images/icon/arrow-right.png",
+      }, {
+        text: "国际快递",
+        img: "/images/icon/arrow-right.png",
+      }, {
+        text: "全部",
+        img: "/images/icon/arrow-right.png",
+      }, {
+        text: "国际物流",
+        img: "/images/icon/arrow-right.png",
+      }, {
+        text: "国际快递",
+        img: "/images/icon/arrow-right.png",
+      }, {
+        text: "全部",
+        img: "/images/icon/arrow-right.png",
+      }, {
+        text: "国际物流",
+        img: "/images/icon/arrow-right.png",
+      }, {
+        text: "国际快递",
+        img: "/images/icon/arrow-right.png",
+      }, {
+        text: "全部",
+        img: "/images/icon/arrow-right.png",
+      }, {
+        text: "国际物流",
+        img: "/images/icon/arrow-right.png",
+      }, {
+        text: "国际快递",
+        img: "/images/icon/arrow-right.png",
+      }, {
+        text: "全部",
+        img: "/images/icon/arrow-right.png",
+      }, {
+        text: "国际物流",
+        img: "/images/icon/arrow-right.png",
+      }, {
+        text: "国际快递",
+        img: "/images/icon/arrow-right.png",
+      }, {
+        text: "全部",
+        img: "/images/icon/arrow-right.png",
+      }, {
+        text: "国际物流",
+        img: "/images/icon/arrow-right.png",
+      }, {
+        text: "国际快递",
+        img: "/images/icon/arrow-right.png",
+      }, 
     ]
   },
 
@@ -40,14 +70,14 @@ Page({
   onLoad: function (options) {
 
   },
-  
+
   cancelTab: function (event) {
     wx.navigateBack({
       delta: 1
     })
   },
 
-  detailChooseTap: function(event) {
+  detailChooseTap: function (event) {
     wx.navigateBack({
       delta: 1
     })

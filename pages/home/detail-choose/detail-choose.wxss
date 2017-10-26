@@ -22,8 +22,7 @@
 }
 
 .detail-choose-content {
-  height: 1000rpx;
-  margin: 120rpx 0 100rpx;
+  padding: 120rpx 0;
   background-color: #fff;
 }
 

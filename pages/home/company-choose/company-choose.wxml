@@ -15,7 +15,7 @@
       <image class="company-choose-img" src="../../../images/icon/arrow-down.png" />
     </view>
 
-    <image class="company-choose-line" src="../../../images/input/vertical-line.png" />
+    <image class="company-choose-line" src="../../../images/icon/vertical-line.png" />
 
     <view bindtap="companyChooseTap" class="company-choose-head-view">
       <text class="company-choose-title">区域选择</text>
