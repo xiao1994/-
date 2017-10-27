@@ -21,8 +21,13 @@
   flex: 1;
 }
 
-.phone-code {
-  margin-right:160rpx;
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+  margin-right: 160rpx;
   color: #fff;
   font-size: 20rpx;
   width: 160rpx;

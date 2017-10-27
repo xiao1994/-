@@ -1,1 +1,13 @@
-/* pages/summary/summary.wxss */
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+  margin-right: 160rpx;
+  color: #fff;
+  font-size: 20rpx;
+  width: 160rpx;
+  height: 50rpx;
+  background-color: red;
+}

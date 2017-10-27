@@ -1,13 +1,11 @@
 <import src="../template/input/input-template.wxml" />
 <import src="../template/me-bar/me-bar-template.wxml" />
-<view wx:if="{{true}}" class="sign-in-container">
+<view wx:if="{{sign_in}}" class="sign-in-container">
   <view>
     <block wx:for="{{sign_in_key}}" wx:for-item="input">
       <template is="inputTemplate" data="{{...input}}" />
     </block>
   </view>
-
-  <text class="prompt">用户不存在</text>
 
   <view>
     <text bindtap="signPhoneTap" class="forgot-password">忘记密码？</text>
@@ -18,7 +16,7 @@
   <text bindtap="signUpTap" class="sign-up-text">新用户注册</text>
 </view>
 
-<scroll-view wx:if="{{flase}}">
+<scroll-view wx:if="{{me}}">
   <view class="me-head-container">
     <image class="avatar" src="/images/input/id-hand.jpg"/>
     <text class="user-name">李青</text>

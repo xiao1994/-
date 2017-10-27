@@ -3,7 +3,7 @@
 
   <view>
     <block wx:for="{{sign_up_key}}" wx:for-item="input">
-      <template is="inputTemplate" data="{{...input}}" />
+      <template is="inputTemplate" data="{{...input,is_show}}" />
     </block>
   </view>
 
@@ -14,5 +14,5 @@
   </view>
 
   <text class="sign-phone-prompt">验证码不正确</text>
-  <button bindtap="IDTap" class="sign-up-btn">下一步</button>
+  <button bindtap="idTap" class="sign-up-btn">下一步</button>
 </view>

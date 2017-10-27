@@ -5,12 +5,6 @@
   flex-direction: column;
 }
 
-.prompt {
-  text-align: center;
-  color: red;
-  margin-bottom: 30rpx;
-}
-
 .forgot-password {
   float: right;
   color: #000;

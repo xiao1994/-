@@ -30,43 +30,46 @@ var icons_container = [
 
 var sign_in = [
   {
+    id: "phone",
     img: "/images/input/phone.png",
     line: "/images/icon/vertical-line.png",
-    content: "手机号"
+    content: "手机号",
   },
   {
+    id: "password",
     img: "/images/input/lock.png",
     line: "/images/icon/vertical-line.png",
-    content: "登陆密码"
+    content: "登陆密码(6-11)位",
   }
 ]
 
 var sign_up = [
   {
+    id: "phone",
     img: "/images/input/phone.png",
     line: "/images/icon/vertical-line.png",
     content: "手机号"
-  },
-  {
+  }, {
+    id: "userName",
     img: "/images/input/user.png",
     line: "/images/icon/vertical-line.png",
-    content: "用户名"
-  },
-  {
+    content: "用户名(3-11)位"
+  }, {
+    id: "password",
     img: "/images/input/lock.png",
     line: "/images/icon/vertical-line.png",
-    content: "设置密码"
-  },
-  {
+    content: "密码(6-11)位"
+  }, {
+    id: "passwordAgain",
     img: "/images/input/lock.png",
     line: "/images/icon/vertical-line.png",
-    content: "再次确认密码"
-  },
-  {
+    content: "重复确认密码"
+  }, {
+    id: "code",
     img: "/images/input/code.png",
     line: "/images/icon/vertical-line.png",
     content: "手机验证码",
-    phoneCode: "true"
+    phoneCode: "true",
   },
 ]
 
@@ -171,5 +174,5 @@ module.exports = {
   sign_phone: sign_phone,
   password: password,
   me: me,
-  city_container, city_container,
+  city_container: city_container
 }

@@ -17,7 +17,7 @@
 .id-img {
   margin: 45rpx auto;
   height: 300rpx;
-  width: 450rpx;
+  width: 470rpx;
 }
 
 .id-title {

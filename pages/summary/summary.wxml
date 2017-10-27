@@ -1,7 +1,5 @@
-<view class="btn-area">
-  <view class="body-view">
-    <text>{{text}}</text>
-    <button bindtap="add">add line</button>
-    <button bindtap="remove">remove line</button>
+
+  <view>
+    <button class="{{is_show?'show':'hide'}}" bindtap="getSmsTap">获取验证码</button>
+    <button class="{{is_show?'hide':'show'}}">{{last_time}}</button>
   </view>
-</view>

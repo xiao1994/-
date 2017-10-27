@@ -27,16 +27,16 @@
   </view>
 
   <view class="company-detail-choose">
-    <text class="company-detail-choose-text">公司简介</text>
+    <text bindtap="summaryTap" class="company-detail-choose-text">公司简介</text>
     <image class="vertical-line" src="../../../images/icon/vertical-line.png" />
-    <text class="company-detail-choose-text">服务站点</text>
+    <text bindtap="siteTap" class="company-detail-choose-text">服务站点</text>
     <image class="vertical-line" src="../../../images/icon/vertical-line.png" />
-    <text class="company-detail-choose-text">企业相册</text>
+    <text  bindtap="albumTap" class="company-detail-choose-text">企业相册</text>
     <image class="vertical-line" src="../../../images/icon/vertical-line.png" />
-    <text class="company-detail-choose-text">用户评价</text>
+    <text  bindtap="starTap" class="company-detail-choose-text">用户评价</text>
   </view>
 
-  <view wx:if="{{}}" class="company-detail-choose-summary">
+  <view wx:if="{{summary}}" class="company-detail-choose-summary">
     <view>
       <view class="company-detail-choose-summary-text">{{company_detail_choose_summary_text}}
       </view>
@@ -44,7 +44,7 @@
     <image class="company-detail-choose-summary-img" src="../../../images/home/company-logo.jpg" />
   </view>
 
-  <block wx:if="{{}}" wx:for="{{sites}}">
+  <block wx:if="{{site}}" wx:for="{{sites}}">
     <view class="site-container">
       <view class="site-top">
         <text class="site-name">{{item.name}}</text>
@@ -73,13 +73,13 @@
     </view>
   </block>
 
-  <block wx:if="{{}}" wx:for="{{album}}" >
+  <block wx:if="{{album}}" wx:for="{{albums}}" >
     <view class="album">
       <image class="album-image" src="{{item.img}}"/>
     </view>
   </block>
 
-  <view class="stars-container">
+  <view wx:if="{{star}}" class="stars-container">
     <view class="stars">
       <image src="/images/icon/star.png"></image>
       <image src="/images/icon/star.png"></image>
