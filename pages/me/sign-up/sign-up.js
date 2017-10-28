@@ -13,7 +13,6 @@ var settime = function (that) {
       is_show: false,
       last_time: countdown
     })
-
     countdown--;
   }
   setTimeout(function () {
