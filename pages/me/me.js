@@ -32,7 +32,7 @@ Page({
       if (phone.length != 11 || !myreg.test(phone)) {
         wx.showToast({
           title: '手机号有误！',
-          icon: 'success',
+          icon: 'loading',
           duration: 1500
         })
         this.data.phone = 'fail'
@@ -45,7 +45,7 @@ Page({
       if (password.length >= 12 || password.length <= 5) {
         wx.showToast({
           title: '登陆密码有误！',
-          icon: 'success',
+          icon: 'loading',
           duration: 1500
         })
         this.data.password = 'fail'
@@ -59,7 +59,7 @@ Page({
     if (this.data.phone == 'fail' || this.data.phone == undefined) {
       wx.showToast({
         title: '手机号有误！',
-        icon: 'success',
+        icon: 'loading',
         duration: 1500
       })
       return false
@@ -67,7 +67,7 @@ Page({
     if (this.data.password == 'fail' || this.data.password == undefined) {
       wx.showToast({
         title: '登陆密码有误！',
-        icon: 'success',
+        icon: 'loading',
         duration: 1500
       })
       return false
@@ -84,7 +84,7 @@ Page({
       header: {
         'content-type': 'application/x-www-form-urlencoded' // 默认值
       },
-      success: function (res) {
+      loading: function (res) {
         console.log(res.data.code)
         if (res.data.code == 1000) {
           console.log(res.data.msg)
@@ -96,7 +96,7 @@ Page({
         } else {
           wx.showToast({
             title: res.data.msg,
-            icon: 'success',
+            icon: 'loading',
             duration: 1500
           })
         }

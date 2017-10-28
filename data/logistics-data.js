@@ -75,16 +75,20 @@ var sign_up = [
 
 var id_content = [
   {
+    id:"telephone",
     title: "备用电话",
     content: "座机或者其它手机"
   },
   {
+    id:"idName",
     title: "真实姓名",
     content: "必填"
   }, {
+    id:"address",
     title: "住址",
     content: "住址"
   }, {
+    id:"idNumber",
     title: "身份证号",
     content: "必填"
   },

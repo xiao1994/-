@@ -29,10 +29,6 @@
   text-align: center;
 }
 
-.id-prompt {
-  color: red;
-}
-
 .id-btn {
   margin-top: 50rpx;
   font-size: 45rpx;

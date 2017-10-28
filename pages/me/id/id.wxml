@@ -3,9 +3,9 @@
 <scroll-view>
 
   <view class="id-content-container">
-    <view class="avatar-container">
-      <text class="avatar-text">头像</text>
-      <image class="avatar-img" src="/images/input/user.png" />
+    <view bindtap='avatarTap' class="avatar-container">
+      <text class="avatar-text">设置头像</text>
+      <image class="avatar-img" src="{{avatarImg}}" />
     </view>
 
     <block wx:for="{{id_content_key}}" wx:for-item="input">
@@ -20,7 +20,6 @@
   </view>
 
   <view class="id-finish-container">
-    <text class="id-prompt">请完善资料</text>
-    <button bindtap="idFinishTab" class="id-btn">注册完成</button>
+    <button bindtap="idFinishTap" class="id-btn">注册完成</button>
   </view>
 </scroll-view>

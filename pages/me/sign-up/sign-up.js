@@ -43,7 +43,7 @@ Page({
       if (phone.length != 11 || !myreg.test(phone)) {
         wx.showToast({
           title: '手机号有误！',
-          icon: 'success',
+          icon: 'loading',
           duration: 1500
         })
         this.data.phone = 'fail'
@@ -56,7 +56,7 @@ Page({
       if (userName.length >= 12 || userName.length <= 4) {
         wx.showToast({
           title: '用户名有误',
-          icon: 'success',
+          icon: 'loading',
           duration: 1500
         })
         this.data.userName = 'fail'
@@ -69,7 +69,7 @@ Page({
       if (password.length >= 12 || password.length <= 5) {
         wx.showToast({
           title: '密码有误',
-          icon: 'success',
+          icon: 'loading',
           duration: 1500
         })
         this.data.password = 'fail'
@@ -82,7 +82,7 @@ Page({
       if (passwordAgain != this.data.password) {
         wx.showToast({
           title: '两次密码不一致',
-          icon: 'success',
+          icon: 'loading',
           duration: 1500
         })
         this.data.passwordAgain = 'fail'
@@ -92,10 +92,10 @@ Page({
     }
     if ('code' == e.currentTarget.id) {
       var code = inputContent[e.currentTarget.id];
-      if (code.length !=6) {
+      if (code.length != 6) {
         wx.showToast({
           title: '验证码6位数字',
-          icon: 'success',
+          icon: 'loading',
           duration: 1500
         })
         this.data.code = 'fail'
@@ -111,11 +111,56 @@ Page({
     })
   },
 
+
+  getSmsTap: function (event) {
+    console.log(this.data.phone)
+    var that = this//不要漏了这句，很重要
+    if (this.data.phone == 'fail' || this.data.phone == undefined) {
+      wx.showToast({
+        title: '手机号有误！',
+        icon: 'loading',
+        duration: 1500
+      })
+      return false
+    }
+
+    wx.request({
+      method: 'POST',
+      url: getApp().data.domain + 'interface/wx/common/sms',
+      data: {
+        'appId': 'wxb3094e84f2642f59',
+        'phone': this.data.phone,
+        'type': '1',
+      },
+      header: {
+        'content-type': 'application/x-www-form-urlencoded' // 默认值
+      },
+      loading: function (res) {
+        console.log(res.data.code)
+        if (res.data.code == 1000) {
+          console.log(res.data.msg)
+          that.setData({
+            loginData: res.data.data,
+            is_show: (!that.data.is_show) //false
+          })
+          settime(that);
+        } else {
+          wx.showToast({
+            title: res.data.msg,
+            icon: 'loading',
+            duration: 1500
+          })
+        }
+
+      }
+    })
+  },
+
   idTap: function (event) {
     if (this.data.phone == 'fail' || this.data.phone == undefined) {
       wx.showToast({
         title: '手机号有误！',
-        icon: 'success',
+        icon: 'loading',
         duration: 1500
       })
       return false
@@ -123,7 +168,7 @@ Page({
     if (this.data.userName == 'fail' || this.data.userName == undefined) {
       wx.showToast({
         title: '用户名有误',
-        icon: 'success',
+        icon: 'loading',
         duration: 1500
       })
       return false
@@ -132,7 +177,7 @@ Page({
     if (this.data.password == 'fail' || this.data.password == undefined) {
       wx.showToast({
         title: '密码有误',
-        icon: 'success',
+        icon: 'loading',
         duration: 1500
       })
       return false
@@ -140,7 +185,7 @@ Page({
     if (this.data.passwordAgain == 'fail' || this.data.passwordAgain == undefined) {
       wx.showToast({
         title: '两次密码不一致',
-        icon: 'success',
+        icon: 'loading',
         duration: 1500
       })
       return false
@@ -148,7 +193,7 @@ Page({
     if (this.data.code == 'fail' || this.data.code == undefined) {
       wx.showToast({
         title: '验证码6位数字',
-        icon: 'success',
+        icon: 'loading',
         duration: 1500
       })
       return false
@@ -162,21 +207,25 @@ Page({
         'appId': 'wxb3094e84f2642f59',
         'phone': this.data.phone,
         'password': this.data.password,
+        'type': 1,
       },
       header: {
         'content-type': 'application/x-www-form-urlencoded' // 默认值
       },
-      success: function (res) {
+      loading: function (res) {
         console.log(res.data.code)
         if (res.data.code == 1000) {
           console.log(res.data.msg)
           that.setData({
             loginData: res.data.data,
           })
+          wx.navigateTo({
+            url: "../id/id"
+          })
         } else {
           wx.showToast({
             title: res.data.msg,
-            icon: 'success',
+            icon: 'loading',
             duration: 1500
           })
         }
@@ -184,55 +233,4 @@ Page({
       }
     })
   },
-  getSmsTap: function () {
-    var that = this;
-    // 将获取验证码按钮隐藏60s，60s后再次显示
-    that.setData({
-      is_show: (!that.data.is_show) //false
-    })
-    settime(that);
-  }
-
-  // getSmsTap: function (event) {
-  //   console.log(this.data.phone)
-  //   var that = this//不要漏了这句，很重要
-  //   if (this.data.phone == 'fail' || this.data.phone == undefined) {
-  //     wx.showToast({
-  //       title: '手机号有误！',
-  //       icon: 'success',
-  //       duration: 1500
-  //     })
-  //     return false
-  //   }
-    
-  //   wx.request({
-  //     method: 'POST',
-  //     url: getApp().data.domain + 'interface/wx/common/sms',
-  //     data: {
-  //       'appId': 'wxb3094e84f2642f59',
-  //       'phone': this.data.phone,
-  //       'type': '1',
-  //     },
-  //     header: {
-  //       'content-type': 'application/x-www-form-urlencoded' // 默认值
-  //     },
-  //     success: function (res) {
-  //       console.log(res.data.code)
-  //       if (res.data.code == 1000) {
-  //         console.log(res.data.msg)
-  //         that.setData({
-  //           loginData: res.data.data,
-  //         })
-  //       } else {
-  //         wx.showToast({
-  //           title: res.data.msg,
-  //           icon: 'success',
-  //           duration: 1500
-  //         })
-  //       }
-
-  //     }
-  //   })
-  // },
-
 })
