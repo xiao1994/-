@@ -3,7 +3,7 @@
 
   <view>
     <block wx:for="{{sign_up_key}}" wx:for-item="input">
-      <template is="inputTemplate" data="{{...input,is_show}}" />
+      <template is="inputTemplate" data="{{...input,is_show,last_time}}" />
     </block>
   </view>
 

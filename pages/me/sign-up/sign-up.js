@@ -26,6 +26,7 @@ Page({
   data: {
     inputContent: {},
     is_show: "true",
+    last_time: countdown,
   },
 
   onLoad: function (options) {
@@ -187,7 +188,7 @@ Page({
     var that = this;
     // 将获取验证码按钮隐藏60s，60s后再次显示
     that.setData({
-      is_show: (!that.data.logisticsData.sign_up.is_show)   //false
+      is_show: (!that.data.is_show) //false
     })
     settime(that);
   }
